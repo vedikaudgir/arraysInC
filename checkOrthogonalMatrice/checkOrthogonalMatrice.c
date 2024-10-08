@@ -1,11 +1,12 @@
-// Programm to take 2d array as an input and print it.
+// Programm to check weather a matrix is orthogonal or not.
 // Author - Vedika Udgir.
+
 #include <stdio.h>
 
 void main()
 {
-    int a[10][10], t[10][10], identity[10][10], mul[10][10]={0};
-    int n, m, i, j, k,c=0;
+    int a[10][10], t[10][10], identity[10][10], mul[10][10] = {0};
+    int n, m, i, j, k, c = 0;
 
     printf("\nEnter the number of rows and coloumns - ");
     scanf("%d%d", &n, &m);
@@ -80,7 +81,7 @@ void main()
                 }
             }
         }
-        
+
         printf("\n The product of matrice and it's transpose is - \n");
         for (i = 0; i <= n - 1; i++)
         {
@@ -90,7 +91,6 @@ void main()
             }
             printf("\n");
         }
-
 
         for (i = 0; i <= n - 1; i++)
         {
@@ -103,14 +103,13 @@ void main()
             }
         }
 
-        if (c == (n*m))
+        if (c == (n * m))
         {
-            printf("ORTHOGONAL MATRICE");
+            printf("\nThis is an orthogonal Matrice.");
         }
         else
         {
-            printf("NOT AN ORTHOGONAL MATRICE");
+            printf("\nThis is not an orthogonal matrice.");
         }
-
     }
 }
